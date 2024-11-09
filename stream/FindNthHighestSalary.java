@@ -21,17 +21,11 @@ public class FindNthHighestSalary {
             inputList.add(sc.nextInt());
         }
 
-        findNthHighestSalary(inputList, nth);
+        var result = findNthHighestSalary(inputList, nth);
+        System.out.println(nth + " Highest Salary: " + result);
     }
 
-    private static void findNthHighestSalary(ArrayList<Integer> inputList, int nth) {
-        if (inputList.isEmpty()) {
-            System.out.println("Empty list");
-            return;
-        }
-
-        var list = inputList.stream().distinct().sorted(Collections.reverseOrder()).toList();
-
-        System.out.println(list.get(nth - 1));
+    private static Integer findNthHighestSalary(ArrayList<Integer> inputList, Integer nth) {
+        return inputList.stream().distinct().sorted(Collections.reverseOrder()).skip((long) nth - 1).findFirst().orElse(null);
     }
 }
