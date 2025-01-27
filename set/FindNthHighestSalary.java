@@ -14,9 +14,9 @@ public class FindNthHighestSalary {
         var sc = new Scanner(System.in);
 
         var inputList = new ArrayList<Integer>();
-
+        System.out.println("Highest Salary No.: ");
         var nth = sc.nextInt();
-
+        System.out.println("Input Salaries: ");
         while (sc.hasNextInt()) {
             inputList.add(sc.nextInt());
         }
