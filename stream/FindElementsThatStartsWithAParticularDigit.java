@@ -5,9 +5,7 @@ import java.util.Scanner;
 
 /**
  * Write a program in Java to filter a list of integers based on a specified starting digit. The program should:
- *
  * Take an integer (number) and a list of integers (inputList) as input.
- *
  * Output a list of integers that begin with the given integer.
  */
 public class FindElementsThatStartsWithAParticularDigit {
