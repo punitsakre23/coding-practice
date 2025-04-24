@@ -31,7 +31,7 @@ public class FindNthHighestSalary {
     }
 
     private static void find2ndHighestSalary(List<Integer> listOfIntegers, int i) {
-        Integer resultant = listOfIntegers.stream().distinct().sorted(Comparator.reverseOrder()).skip(i - 1).findFirst().orElse(-1);
+        Integer resultant = listOfIntegers.stream().distinct().sorted(Comparator.reverseOrder()).skip((long) i - 1).findFirst().orElse(-1);
         System.out.println("2nd Highest Salary: " + resultant);
     }
 
