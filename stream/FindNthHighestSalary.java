@@ -28,6 +28,10 @@ public class FindNthHighestSalary {
         System.out.println(nth + " Highest Salary: " + result);
         List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
         find2ndHighestSalary(listOfIntegers, 2);
+
+        int [] arr = {1, 56, 3, 4, 77, 22, 87, 87, 21};
+        int i = Arrays.stream(arr).boxed().distinct().sorted((n1, n2) -> n2 - n1).skip(1).findFirst().orElse(-1);
+        System.out.println("Second element: " + i);
     }
 
     private static void find2ndHighestSalary(List<Integer> listOfIntegers, int i) {
