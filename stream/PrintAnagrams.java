@@ -24,8 +24,8 @@ public class PrintAnagrams {
 
     private static List<List<String>> groupAnagrams(String[] s) {
 
-        List<String> sorted = Arrays.stream(s).map(str -> new String(str.chars().mapToObj(c -> (char) c).sorted().toString())).toList();
-        System.out.println(sorted);
+//        List<String> sorted = Arrays.stream(s).map(str -> new String(str.chars().mapToObj(c -> (char) c).sorted().toString())).toList();
+//        System.out.println(sorted);
 //        Arrays.stream(s).map(str -> str.chars().sorted().mapToObj(c -> (char) c).toString()).forEach(System.out::println);
 
         List<String> list = new ArrayList<>(List.of(s));
